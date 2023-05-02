@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+        </div> <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        </div> <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        </div> <br>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob" id="dob" />
+        </div>
+        </div> <br>
+        <div>
+            <label for="photo">Insert photo</label>
+            <input type="file" name="photo" id="photo" />
+        </div> <br>
+        <div>
+            <label for="gender">Select gender</label>
+            <!-- name should be same to all to maka them a group -->
+            <input type="radio" name="gender" id="gender" value="male" checked />Male
+            <input type="radio" name="gender" id="gender" value="female" />Female
+        </div>
+        </div> <br>
+        <div>
+            <label for="language">Select language</label>
+            <!-- name should be same to all to maka them a group -->
+            <input type="checkbox" name="language" id="language" value="bangla" />Bangla
+            <input type="checkbox" name="language" id="language" value="english" checked />English
+            <input type="checkbox" name="language" id="language" value="hindi" />Hindi
+        </div> <br>
+
+        <!-- Dropdown menu is little different -->
+        <div>
+            <label for="departemnt">Select department</label>
+            <select name="departemnt" id="departemnt">
+                <option value="cse">CSE</option>
+                <option value="eee" selected>EEE</option>
+                <option value="llb">LLB</option>
+            </select>
+        </div> <br>
+
+        <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10">Write a comment...</textarea>
+        </div> <br>
+
+
+        <div>
+            <label for="agree">I agree with terms and conditions</label>
+            <!-- name should be same to all to maka them a group -->
+            <input type="radio" name="agree" id="agree" value="agree" checked readonly />Agree (Read only)
+
+        </div> <br>
+
+        <!-- Button -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Re-submit" disabled>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Get form details on your email with help of formspree.io -->
+    <h3>Get form details on your email with help of formspree.io</h3>
+    <form action="https://formspree.io/f/{your-id}" method="POST">
+        <label>
+            Your email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+    </form>
+    <!-- Learn more: https://formspree.io/ -->
+</body>
+
+</html>
