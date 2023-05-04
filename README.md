@@ -1,2 +1,2 @@
 # html
- // Let's learn html
+ // Let's learn HTML
